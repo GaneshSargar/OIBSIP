@@ -1,5 +1,5 @@
 const calculateTemp = () => {
-    const inputTemp = document.getElementById('temp').value;
+    const inputTemp = document.getElementById('temperature').value;
 
     const tempSelected = document.getElementById('temp_diff');
     const valueTemp = temp_diff.options[tempSelected.selectedIndex].value;
@@ -16,7 +16,7 @@ const calculateTemp = () => {
         return celsius;
     }
 
-    if (valueTemp == 'cel') {
+    if (valueTemp == 'celsius') {
         document.getElementById("result").innerHTML = celToFah(inputTemp) + "&#176; Fahrenheit";
     }
     else {
